@@ -1,0 +1,18 @@
+{% extends "card.html" %}
+{% load static %}
+
+{% block img-link %}
+   {% static 'racket-logo.png' %}
+{% endblock img-link %}
+
+{% block language %}
+   Racket
+{% endblock language %}
+
+{% block description %}
+   <a href="https://racket-lang.org/">Racket</a> is a general purpose programming language derived from the Lisp family. Racket first appearedin 1995. It was created by Matthias Felleisen and a group of academics as a language for novice programmers. Racket also has a robust macro system which lends itself to creating domain-specific languages.
+{% endblock description %}
+
+{% block language-link %}
+   {% url 'racket' %}
+{% endblock language-link %}

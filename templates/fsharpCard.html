@@ -1,0 +1,18 @@
+{% extends "card.html" %}
+{% load static %}
+
+{% block img-link %}
+   {% static 'f-sharp-logo.png' %}
+{% endblock img-link %}
+
+{% block language %}
+   F#
+{% endblock language %}
+
+{% block description %}
+   F# is a general purpose programming language. Often times, it will be used as a replacement for C#, another programming language from Microsoft. Developers have also used F# for web programming (it can compile to JavaScript), application development, and a variety of tasks that involve business analytics.
+{% endblock description %}
+
+{% block language-link %}
+   {% url 'fsharp' %}
+{% endblock language-link %}
